@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import Restaurant from "../models/restaurant";
 
-/*
+
 const getRestaurant = async (req: Request, res: Response) => {
   try {
     const restaurantId = req.params.restaurantId;
@@ -16,7 +16,7 @@ const getRestaurant = async (req: Request, res: Response) => {
     console.log(error);
     res.status(500).json({ message: "something went wrong" });
   }
-};*/
+};
 
 const searchRestaurant = async (req: Request, res: Response) => {
   try {
@@ -87,6 +87,6 @@ const searchRestaurant = async (req: Request, res: Response) => {
 };
 
 export default {
-  //getRestaurant,
+  getRestaurant,
   searchRestaurant,
 };
